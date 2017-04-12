@@ -1,5 +1,5 @@
-#Cheatsheet I: Formatting
-#Table of contents:
+# Cheatsheet I: Formatting
+# Table of contents:
 1. [Deleting things after dot in fist column](#p1)
 2. [Deleting lines begining with certain expression](#p2)
 3. [Adding an expression at the begining of every line](#p3)
@@ -11,7 +11,7 @@
 9. [Subsample bam. Fraction: 0.5](#p9)
 
 Some useful solutions for dealing with files, texts and formats.
-####Deleting things after dot in fist column (or another expression inside an expression) <a name="p1"></a>
+#### Deleting things after dot in fist column (or another expression inside an expression) <a name="p1"></a>
 I want to substitute an expression that contains a dot with the same expression except whats following the dot (using sed).	
 
 **Solution:**		
@@ -35,7 +35,7 @@ GL174807	13390	13647
 Remember: when using *sed*, if -i not stated, result is shown in screen.
 If -i, then the file is modified. If want output separated from intact
 input, use `input.txt > output.txt`.
-####Deleting lines begining with certain expression. <a name="p2"></a>
+#### Deleting lines begining with certain expression. <a name="p2"></a>
 There are lines in a text file starting with *#* I want to delete.  
 
 **Solution:**
@@ -63,7 +63,7 @@ eva@foo:~/foo$ head Mus_musculus.GRCm38.82.mod.gtf
 
 ```
 
-####Adding an expression at the begining of every line. <a name="p3"></a>
+#### Adding an expression at the begining of every line. <a name="p3"></a>
 I need to add *chr* at the begining of every line.		
 
 **Solution:**
@@ -88,14 +88,14 @@ chr1	429760	0.168550401010501
 chr1	388441	0.100897722183018
 chr1	623867	0.118182579807373
 ```
-####Deleting an expression that appears more that once in a text file.<a name="p4"></a>
+#### Deleting an expression that appears more that once in a text file.<a name="p4"></a>
 I want to delete every *span=1* in a wig file.		
 
 **Solution:**
 ```sh
 sed -e 's/\<span=1\>//g' input.wig > output.wig
 ```
-####Copying lines between two expressions. <a name="p5"></a>
+#### Copying lines between two expressions. <a name="p5"></a>
  I need the lines of a wig corresponding to a chromosome. This is, I need
  everything between `fixedStep chrom=chr(n)` and `fixedStep chrom=chr(n+1)`.  
  
@@ -118,14 +118,14 @@ For column 2:
 ```bash
 awk '{ $2 = ""; print>"new.txt" }' filename
 ```
-####Deleting several columns of a text file. <a name="p7"></a>
+#### Deleting several columns of a text file. <a name="p7"></a>
 I want to delete columns *n* to *k*.\\
 **Solution:**
 ```bash
 cut -fn-k file
 cut -f4-13 file  ## prints from the 4th to the 13th
 ```
-####Checking if a bam file has a binary header. <a name="p8"></a>
+#### Checking if a bam file has a binary header. <a name="p8"></a>
 Sometimes, if the .bam file is truncated (you may have run out of memory while creating it), when trying to process it with a tool, you get: `[bam_header_read] EOF marker is absent`. You have to check if it is complete.   
 
 **Solution:**
@@ -140,7 +140,7 @@ Another way to see the header:
 ```bash
 samtools view -H file.bam
 ```
-####Subsample bam. Fraction: 0.5. <a name="p9"></a>
+#### Subsample bam. Fraction: 0.5. <a name="p9"></a>
 **Solution:**
 ```bash
 samtools view -s 0.5 file.bam -b > 0.0.2.bam

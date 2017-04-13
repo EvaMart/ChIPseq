@@ -22,6 +22,7 @@ fixedStep chrom=chr3 start=400601 step=100
 11
 22
 33
+...etc...
 ```
 or 
 ```
@@ -29,6 +30,7 @@ fixedStep chrom=chr3 start=400601 step=100 span=5
 11
 22
 33 
+...etc...
 ```
 #### Output file:
 It will be called as the input followed by *.ExplInfo* (e.i **input.wig.ExplInfo**). It looks:

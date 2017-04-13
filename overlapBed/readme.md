@@ -6,20 +6,20 @@ Usage:
 python overlapBed.py <file1.bed> <file2.bed> <output.bed>
 ```
 Input files:
-  - file1.bed and file2.bed: bed format file. At least 4 fields separated by tabs:
+- file1.bed and file2.bed: bed format file. At least 4 fields separated by tabs:
 ```
 chromosome	start	end	score
 ```
 
 Output file:
-  - output.bed: bed format file. Five fields: 
+- output.bed: bed format file. Five fields: 
 ```
 chromosome	start1	end1	score1	score2
 ```
-* Chromosome: chromosome.
-* start1: start of peak in file1.
-* end1: end of peak in file1.
-* score1: score of peak in file 1. 
-* score2: score of overlaping peak in file2. If there is no overlapping peak in file2, score2='NA'.
+  * Chromosome: chromosome.
+  * start1: start of peak in file1.
+  * end1: end of peak in file1.
+  * score1: score of peak in file 1. 
+  * score2: score of overlaping peak in file2. If there is no overlapping peak in file2, score2='NA'.
 
 

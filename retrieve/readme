@@ -1,0 +1,6 @@
+retrieve.py:
+
+Este programa extrae del archivo <p> los picos indicados por el archivo <out_common>. 
+<out_common> es uno de los outputs del programa peak_gene.py.
+
+última modificación: 4 de Mayo de 2016

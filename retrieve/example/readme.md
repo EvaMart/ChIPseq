@@ -1,0 +1,45 @@
+# Example
+
+We have a file of human peask called *human.consensus.peaks.bed* and I want to retrieve some of them, stated in the file *peaks_common_genes_HXZ*. 
+
+human.consensus.peaks.bed:
+```
+chr1	25077	25231	0.0884027569673359
+chr1	389103	389418	0.168550401010501
+chr1	430482	430757	0.100897722183018
+chr1	559354	559567	0.118182579807373
+chr1	601057	601360	0.165860940062705
+...etc...
+```
+*peaks_common_genes_HXZ*:
+```
+28	1	4721320	ENSG00000196581
+29	1	4771194	ENSG00000196581
+30	1	4773395	ENSG00000196581
+31	1	4775031	ENSG00000196581
+32	1	4780138	ENSG00000196581
+...etc...
+```
+
+We run:
+
+```bash
+python retrieve_peaks.py human.consensus.peaks.bed peaks_common_genes_HXZ
+```
+We get *common_peaks.bed*:
+```
+chr1	4540149	4540494	0.175631805014484
+chr1	4721056	4721584	0.258015054407893
+chr1	4770930	4771459	0.283758510799411
+chr1	4773260	4773531	0.142365494729991
+...etc...
+```
+and *non_common_peaks.bed*:
+```
+chr1	25077	25231	0.0884027569673359
+chr1	389103	389418	0.168550401010501
+chr1	430482	430757	0.100897722183018
+chr1	559354	559567	0.118182579807373
+...etc...
+```
+

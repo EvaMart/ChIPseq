@@ -1,6 +1,6 @@
 # Example:  
 
-We want to show, next to the score of every peak in fileA.bed, the score of the (it will show only one if there are several) peak in fileB.bed that overlap at least in one base with it.   
+We want to show, next to the score of every peak in fileA.bed, the score of the (it will show only one if there are several) peak in fileB.bed that overlaps at least in one base with it.   
 
 fileA.bed:
 ```

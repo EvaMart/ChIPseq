@@ -1,5 +1,5 @@
 # overlapBed
-This program takes two bed files as an input and returns a bed file that contains peaks in file1 and, next to the score of every peak in file1, the score of  the (it will show only one if there are several) peak in file2 that overlaps in at least one base with it. If there is no overlap, score in file2 = 'NA'.  
+This program takes two bed files as input and returns a bed file that contains peaks in file1 and, next to the score of every peak in file1, the score of  the (it will show only one if there are several) peak in file2 that overlaps in at least one base with it. If there is no overlap, score in file2 = 'NA'.  
 ### Usage  
 ```bash
 python overlapBed.py <file1.bed> <file2.bed> <output.bed>

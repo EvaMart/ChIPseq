@@ -1,6 +1,6 @@
 # Example:  
 
-We want to check the chromosomes in which the intervals in TestFile.wigFix are located and how many intervals locate in each chromosome.  
+We want to know the chromosomes in which the intervals in TestFile.wigFix are located and how many intervals locate in each chromosome.  
 TestFile.wigFix contains intervals in chromosomes: chr1, chr1_SDECSD, chr1_DXC1232, chr11 and chr11_XSZ.
 
 **TestFile.wigFix** **:

@@ -13,10 +13,10 @@ chromosome	start	end	score
 
 Output file:
 - output.bed: bed format file. Five fields: 
+  * Chromosome: chromosome.
 ```
 chromosome	start1	end1	score1	score2
 ```
-     * Chromosome: chromosome.
      * start1: start of peak in file1.
      * end1: end of peak in file1.
      * score1: score of peak in file 1. 

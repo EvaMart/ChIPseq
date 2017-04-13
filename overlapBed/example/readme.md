@@ -1,0 +1,48 @@
+# Example:  
+
+We want to show, next to the score of every peak in fileA.bed, the score of the (it will show only one if there are several) peak in fileB.bed that overlap at least in one base with it.   
+
+fileA.bed:
+```
+GL172637	37855	38022	5.15
+GL172637	80006	80404	14.06
+GL172637	136278	136535	4.83
+GL172637	140948	141465	68.27
+GL172637	146701	147035	110.32
+GL172637	160433	160605	4.35
+GL172637	180156	180633	24.88
+GL172637	181743	182225	116.21
+...	
+```
+fileB.bed:
+```
+GL172637	140634	141725	1.51
+GL172637	146431	147236	1.97
+GL172637	180063	180773	3.71
+GL172637	181507	182289	1.51
+GL172637	196816	197322	4.37
+GL172637	219164	219917	3.72
+GL172637	230374	231526	2.63
+GL172637	320144	321261	1.31
+...
+```
+We run:
+```bash
+python overlapBed.py fileA.bed fileB.bed outAB.bed
+```
+The outAB.bed is the output:
+```
+GL172637	37855	38022	5.15	NA
+GL172637	80006	80404	14.06	NA
+GL172637	136278	136535	4.83	NA
+GL172637	140948	141465	68.27	1.51
+GL172637	146701	147035	110.32	1.97
+GL172637	160433	160605	4.35	NA
+GL172637	180156	180633	24.88	3.71
+GL172637	181743	182225	116.21	1.51
+...
+```
+
+
+Note: it is a *X. tropicalis* genome, 'chromosomes' are scaffolds (GL172637, GL172638 ...).
+

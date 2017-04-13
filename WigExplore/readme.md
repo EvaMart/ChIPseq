@@ -1,4 +1,4 @@
-# WigExplore.py
+# WigExplore
 
 This program explores the intervals of a given wigFix file and returns the chromosomes they belong to and the frecuency.
 

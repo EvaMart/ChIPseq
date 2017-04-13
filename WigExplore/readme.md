@@ -33,7 +33,7 @@ fixedStep chrom=chr3 start=400601 step=100 span=5
 ...etc...
 ```
 #### Output file:
-It will be called as the input followed by *.ExplInfo* (e.i **input.wig.ExplInfo**). It looks:
+The output file will have the same name as the input followed by *.ExplInfo* (e.i **input.wig.ExplInfo**). It looks:
 ```
 chrN	frecuency
 chrN+1	frecuency

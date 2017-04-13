@@ -12,6 +12,5 @@ We have a set of human peaks called *human.peaks.y* and a set of genes *common_r
 We run:
 ```bash
 python peak_genes.py hg19.filt.2.txt human.peaks.y common_regH.txt peaks_common_genes_HXZ peaks_no_common_genes_HXZ
-```language
 ```
 *peaks_common_genes_HXZ* and *peaks_no_common_genes_HXZ* are generated.

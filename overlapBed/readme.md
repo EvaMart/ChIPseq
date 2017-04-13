@@ -16,10 +16,10 @@ Output file:
 ```
 chromosome	start1	end1	score1	score2
 ```
-   * Chromosome: chromosome.
-   * start1: start of peak in file1.
-   * end1: end of peak in file1.
-   * score1: score of peak in file 1. 
-   * score2: score of overlaping peak in file2. If there is no overlapping peak in file2, score2='NA'.
+     * Chromosome: chromosome.
+     * start1: start of peak in file1.
+     * end1: end of peak in file1.
+     * score1: score of peak in file 1. 
+     * score2: score of overlaping peak in file2. If there is no overlapping peak in file2, score2='NA'.
 
 

@@ -1,0 +1,14 @@
+**overlapBed.py**
+
+This program takes two bed files as an imput and return the peaks in file1 that overlap in at least one base with a peak in file2. 
+
+Usage: overlapBed.py <file1.bed> <file2.bed> <output.bed>
+
+Inut files:
+file1.bed: bed format file. At least 4 fields: chromosome, start, end, score.
+file2.bed: bed format file. At least 4 fields: chromosome, start, end, score.
+
+Output file:
+output.bed: bed format file. Five fields: chr, start (of peak in file1), end (of peak in file1), score (of peak in file 1), score (of overlaping peak in file2)
+
+

@@ -1,12 +1,13 @@
 # peak_genes
-Given a set of peaks ( **peaks.bed** ), an annotation ( **annotation** ) and a set of genes ( **genes** ), this program returns the peaks in **peaks.bed** whose closest gene is in the set **genes**.  
+
+Given a set of peaks (** *peaks.bed* **), an annotation (** *annotation* **) and a set of genes (** *genes* **), this program returns the peaks in ** *peaks.bed* ** whose closest gene is in the set ** *genes* **.  
 
 This program does two main actions:
 
-1. Makes a peak to gene assignment. Each peak in **peaks.bed** is assigned the closest gene (according to **annotation** ).
-2. Given a list of genes **genes**, it yields two files:
-	  * Peaks assigned a gene in **genes** .
-	  * Peaks assigned a gene not in **genes** .
+1. Makes a peak to gene assignment. Each peak in ** *peaks.bed* ** is assigned the closest gene (according to ** *annotation* ** ).
+2. Given a list of genes ** *genes* **, it yields two files:
+	  * Peaks assigned a gene in ** *genes* **.
+	  * Peaks assigned a gene not in ** *genes* **.
 
 
 #### Usage
@@ -15,7 +16,7 @@ python peak_genes.py <g> <p> <common> <output_in_common> <output_not_in_common>
 ```
 #### Input
 Required files:
-  * **g**: annotation of genes with TSSs in the following format:
+  * **g **: annotation of genes with TSSs in the following format:
 ```
 gene_id	chr	strand	TSS
 ```
@@ -48,14 +49,23 @@ ENSG00000136158
 ```
 #### Output
 
-  * **output_in_common**: peaks whose closest gene is in set **genes**. bed format:
+  * **output_in_common**: peaks whose closest gene is in set **genes**. Format:
 ```
-chr	start end score
+index	chr summit gene_id
 ```
 example:
 ```
-chr1	4540149	4540494	0.175631805014484
-chr1	4721056	4721584	0.258015054407893
-chr1	4770930	4771459	0.283758510799411
+28	1	4721320	ENSG00000196581
+29	1	4771194	ENSG00000196581
+30	1	4773395	ENSG00000196581
+31	1	4775031	ENSG00000196581
 ```
-  * **output_not_in_common**: peaks whose closest gene is not in set **genes**. bed format.
+`index`, `chr` and `summit` of peak.
+`gene_id` of closest gene.
+  * **output_not_in_common**: peaks whose closest gene is not in set **genes**.  Same format as **output_in_common**. Example:
+  ```
+0	1	25154	ENSG00000243485
+1	1	389260	ENSG00000269732
+2	1	430619	ENSG00000256186
+3	1	559460	ENSG00000223659
+```

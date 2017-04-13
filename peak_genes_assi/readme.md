@@ -1,13 +1,13 @@
 # peak_genes
 
-Given a set of peaks (** *peaks.bed* **), an annotation (** *annotation* **) and a set of genes (** *genes* **), this program returns the peaks in ** *peaks.bed* ** whose closest gene is in the set ** *genes* **.  
+Given a set of peaks (** peaks.bed**), an annotation (** annotation **) and a set of genes (** genes **), this program returns the peaks in ** peaks.bed ** whose closest gene is in the set ** genes **.  
 
 This program does two main actions:
 
-1. Makes a peak to gene assignment. Each peak in ** *peaks.bed* ** is assigned the closest gene (according to ** *annotation* ** ).
-2. Given a list of genes ** *genes* **, it yields two files:
-	  * Peaks assigned a gene in ** *genes* ** .
-	  * Peaks assigned a gene not in ** *genes* ** .
+1. Makes a peak to gene assignment. Each peak in ** peaks.bed ** is assigned the closest gene (according to ** annotation ** ).
+2. Given a list of genes ** genes **, it yields two files:
+	  * Peaks assigned a gene in ** genes ** .
+	  * Peaks assigned a gene not in ** genes ** .
 
 
 #### Usage

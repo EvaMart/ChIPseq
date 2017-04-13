@@ -6,8 +6,8 @@ This program does two main actions:
 
 1. Makes a peak to gene assignment. Each peak in ** *peaks.bed* ** is assigned the closest gene (according to ** *annotation* ** ).
 2. Given a list of genes ** *genes* **, it yields two files:
-	  * Peaks assigned a gene in ** *genes* **.
-	  * Peaks assigned a gene not in ** *genes* **.
+	  * Peaks assigned a gene in ** *genes* ** .
+	  * Peaks assigned a gene not in ** *genes* ** .
 
 
 #### Usage

@@ -1,6 +1,6 @@
 # peak_genes
 
-Given a set of peaks (** peaks.bed**), an annotation (** annotation **) and a set of genes (** genes **), this program returns the peaks in ** peaks.bed ** whose closest gene is in the set ** genes **.  
+Given a set of peaks (** peaks.bed **), an annotation (** annotation **) and a set of genes (** genes **), this program returns the peaks in ** peaks.bed ** whose closest gene is in the set ** genes **.  
 
 This program does two main actions:
 

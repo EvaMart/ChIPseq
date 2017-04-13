@@ -1,9 +1,9 @@
 # WigExplore.py
 
-This program explores the intervals of a given wigFix file and returns the chromomes they belong to and the frecuency.
+This program explores the intervals of a given wigFix file and returns the chromosomes they belong to and the frecuency.
 
 ### Usage:
-The only argument needed is the wigix file we eant to explore.
+The only argument needed is the wig file we want to explore.
 ```bash
 pyhton WigExplore.py <fixed_step_input>
 ```

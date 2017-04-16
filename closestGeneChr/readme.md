@@ -1,6 +1,6 @@
 # closestGeneChr
-** *closestGeneChr *** was written for computing closestGene scores, regulatory potential, as defined by [Sikora-Wohlfeld *et al.* 2013][1] (*ClosestGene* method), and their pvalues, given a set of peaks by chromosome. Peaks and scores of each chromosome in a different BED and annotaion files respectively. 
-The difference with ** *closestGene* ** is that ** *closestGeneChr* ** does not generate a distribution of occupation around TSS, but uses alread generated data that need to be provided as input. Note that a  distribution of occupation around TSS is characteristic of a ChIP-seq experiment. Every chromosme of a same experiment uses the same distribution, generated using all the chromosomes in the experiment (very memory demanding).
+***closestGeneChr*** was written for computing closestGene scores, regulatory potential, as defined by [Sikora-Wohlfeld *et al.* 2013][1] (*ClosestGene* method), and their pvalues, given a set of peaks by chromosome. Peaks and scores of each chromosome in a different BED and annotaion files respectively. 
+The difference with ***closestGene*** is that ***closestGeneChr*** does not generate a distribution of occupation around TSS, but uses alread generated data that need to be provided as input. Note that a  distribution of occupation around TSS is characteristic of a ChIP-seq experiment. Every chromosme of a same experiment uses the same distribution, generated using all the chromosomes in the experiment (very memory demanding).
 ### Usage
 ```bash
 python closestGene.py <genes> <peaks> <scores> <pvalues> <n_rand> <up> <down>
@@ -85,4 +85,4 @@ ENSG00000225767	0.0
 ENSG00000202140	0.7
 ENSG00000207194	0.0
 ```
-
+[1]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003342

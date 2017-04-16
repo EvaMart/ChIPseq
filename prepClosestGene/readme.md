@@ -1,0 +1,1 @@
+Input files for closestGene need to be in an specific format. These programs, **PCGgene** and **PCGpeaks**, take a tipical gene annotation file and peak caller's output bed file respectively and format them to suit closestGene requirements.

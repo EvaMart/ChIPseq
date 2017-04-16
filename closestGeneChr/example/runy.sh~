@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /ngs/mdval/Eva/Eomes1/Eomes/Human/TargetGenes/closestcustom
+genes=genes.chr1
+peaks=human.peaks.chr1.y
+scores=scores
+qvalues=qvalues
+
+python closestGene.py $genes $peaks $scores $qvalues 10

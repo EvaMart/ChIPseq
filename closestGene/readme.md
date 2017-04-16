@@ -1,7 +1,7 @@
 # closestGene
-** *closestGene* ** computes the regulatory potential, as defined by
+***closestGene*** computes the regulatory potential, as defined by
 [Sikora-Wohlfeld *et al.* 2013][1] (*ClosestGene* method), of a set of genes given a set of peaks. 
-In addition, ** *closestGene* ** computes the qvalue of the regulatory score associated to each gene. A null distribution is built per gene by randomly assigning peaks to the gene and computing the likelyhood of the score previously calculated. 
+In addition, ***closestGene*** computes the qvalue of the regulatory score associated to each gene. A null distribution is built per gene by randomly assigning peaks to the gene and computing the likelyhood of the score previously calculated. 
 
 ### Usage
 ```bash

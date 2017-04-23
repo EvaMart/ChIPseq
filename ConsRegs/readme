@@ -1,0 +1,2 @@
+ConsReg extrats conserved regions (phastCons score above <threshold>) from a hgWiggle <out.txt> output  file. The output is a bed formatted file 
+usage:ConsReg <out.txt> <out.bed> <threshold>

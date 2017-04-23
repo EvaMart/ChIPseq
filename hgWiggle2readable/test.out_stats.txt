@@ -1,0 +1,6 @@
+#	 from file, Table: phastCons7way
+# Chrom	Data	Data	# Data	Data	Bases	Minimum	Maximum	Range	Mean	Variance Standard
+#	start	end	values	span	covered						deviation
+chr1	20827451	23556311	1306	1	1306	0	1	1	0.36826	0.158408	0.398005
+chr10	14102126	15294168	1146	1	1146	0	0.363417	0.363417	0.0319399	0.00279638	0.0528808
+chr12	52993017	56637238	1187	1	1187	0	1	1	0.247762	0.0884377	0.297385

@@ -1,0 +1,4 @@
+SpanBed takes a file of genomic regions in BED format (<in>)  and returns a new file (<out>) containing user defined long (lenght=2*<N>) 
+regions centered at the summit of each input region.
+Usage:
+python SpanBed.py <in> <out> <N>

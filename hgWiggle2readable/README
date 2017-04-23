@@ -1,0 +1,12 @@
+hgWiggle2Readable takes a hgWiggle output  (variable step wig format)
+generates a file suitable for the R environment, arraging phastCons scores by
+peak instead of genomic position. Example of output format:
+peak    bp  phastCons
+peak_1  -13 0.01
+peak_1  -12 0.001
+...
+
+usage:
+
+python hgWiggle2Readable <hgWiggleoutput> <Readable_name>
+

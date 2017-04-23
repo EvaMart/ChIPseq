@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 14 12:29:27 2016
+
+@author: eva
+"""
+
+from __future__ import division
+import sys
+
+N=int(sys.argv[3]) #span
+BEDin=sys.argv[1]
+BEDout=sys.argv[2]
+
+BEDfile=open(BEDin,"r")
+newBED=open(BEDout,"w")
+for line in BEDfile:
+    LineElement=line.split('\t')
+    chrom=LineElement[0]
+    start=int(LineElement[1])
+    end=int(LineElement[2])
+    summit=int(start+((end-start)/2))
+    left_lim=int(summit-N)
+    right_lim=int(summit+N)
+    newBED.write(chrom+'\t'+str(left_lim)+'\t'+str(right_lim)+'\n')
+

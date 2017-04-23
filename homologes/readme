@@ -1,0 +1,6 @@
+Usage: python homologues.py  <DICC> <input> <output> <X/Z>
+
+<DICC>:text file containing the ENS IDs: human xenopus fish. Usually PWHomHXZ.txt.
+<input>: list of Ensmbl ID of Xenopus or Zebrafish
+<output>: name of the output file. List of human IDs, translated input IDs to human. 
+<X/Z>: 'X' or 'Z', depending if the input is in zebrafish nomenclature ('Z') or xenopus' ('X')
